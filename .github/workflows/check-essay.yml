@@ -1,7 +1,6 @@
 name: Checking the Word Count of Submitted Essay
-'on':
-  pull_request:
-  workflow_dispatch: []
+'on': [push, pull_request]
+  #workflow_dispatch: []
 jobs:
   check-essay:
     runs-on: ubuntu-18.04
